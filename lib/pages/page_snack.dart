@@ -4,7 +4,6 @@ class PageSnack extends StatefulWidget {
   const PageSnack({Key? key, required this.title}) : super(key: key);
   final String title;
 
-
   @override
   State<PageSnack> createState() => _PagesSnackState();
 }
@@ -16,6 +15,23 @@ class _PagesSnackState extends State<PageSnack> {
     setState(() {
       _counter++;
     });
+  }
+
+  void callSnack(BuildContext context) {
+    SnackBar snackbar = SnackBar(
+      content: Text('Je suis la snackbar'),
+      duration: Duration(seconds: 10),
+      backgroundColor: Colors.black38,
+      action: SnackBarAction(
+        label: 'Clic',
+        textColor: Colors.white,
+        onPressed: () {
+          print('Clic snackbar');
+        },
+      ),
+    );
+
+    ScaffoldMessenger.of(context).showSnackBar(snackbar);
   }
 
   @override
