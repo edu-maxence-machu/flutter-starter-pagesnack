@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './pages/page_snack.dart';
+import 'package:navigation/pages/page_alert.dart';
+import './pages/page_alert.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const PageSnack(title: 'Hello World'),
+      home: const PageAlert(title: 'Page alerte'),
     );
   }
 }
