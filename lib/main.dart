@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:navigation/pages/page_alert.dart';
+import 'package:navigation/pages/page_bottom.dart';
 import './pages/page_alert.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const PageAlert(title: 'Page alerte'),
+      home: const PageBottom(title: 'Page alerte'),
     );
   }
 }

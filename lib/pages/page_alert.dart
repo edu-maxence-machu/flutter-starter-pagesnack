@@ -27,7 +27,7 @@ class PageAlert extends StatelessWidget {
         builder: (BuildContext contextDialog) {
           return AlertDialog(
             title: Text(
-              "Ceci 'est une alerte",
+              "Ouuuups...",
               textScaleFactor: 1.5,
             ),
             content: Text("Nous avons un problème"),
